@@ -40,7 +40,7 @@ body{
   align-items: center;
   text-align: center;
   padding:10px 34px;
-  margin:7px;
+  margin:-97px;
  
 }
 .icon-button{
@@ -53,10 +53,24 @@ body{
   border-radius: 30%;
   
 }
-
+#b1{
+  padding:4px;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  margin-right:-28.2em;
+  margin-top: -45px;
+  border-radius: 30%;
+}
  
  input:focus {
     outline: none;
+}
+#map{
+   width:80%;
+  height:800px;
+  padding:30px;
+  margin: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -64,17 +78,29 @@ body{
     width:700px;
   }
 }
-
-
 @media (min-width: 100px) and (max-width: 700px) {
-   #s1{
-    width:200px;
-    height:45px;
+  #s1{
+    width:180px;
+    height:47px;
    }
   .icon-button{
-    margin-right:-8.2em;
-    margin-top: -48px;
+    margin-right:-10.5em;
+    margin-top: -43px;
     padding: 5px;
-    font-size: 30px;
+    font-size: 20px;
   }
+  #b1{
+    padding:4px;
+    font-size: 20px;
+    margin-right:-13.2em;
+    margin-top: -33px;
+    border-radius: 30%;
+  }
+  #map
+  {
+    height: 240px;
+    width:280px;
+  }
+   
+
 }
