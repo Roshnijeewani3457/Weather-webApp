@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,23 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+   
   </head>
 <body>
    <div class="main">
       <div class="search">
         <form action="" > 
-            <input type="search" id="s1" placeholder="Enter city to be searched" autocomplete="off">
+            <input type="search" id="s1" placeholder="Enter city to be searched" autocomplete="off" onclick="">
         </form>
         
    </div>
    <button class="icon-button" onclick="findMyState()"><span><i class="fa-solid fa-location-dot"></i></span></button>
+   <button id="b1" onclick="refreshPage()"><span><i class="fa-solid fa-arrow-rotate-right"></i></span></button>
+   <div id="map"></div>
   <div class="row">  
     
 </div>
+
 </div>
 </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
 <script src="weather.js"></script>
+
 </html>
