@@ -171,17 +171,17 @@ const findMyState= ()=>{
       .then(data => {
         console.log(data)
         weather.innerHTML = `
-        <div>
+       <div>
             <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="">
         </div>
         <div>
-           <h2>${data.main.temp} ℃</h2>
+           <h2>${(data.main.temp-273.15).toFixed(2)} ℃</h2>
             <h4> ${data.weather[0].main} </h4>
         </div>
         <div>
         <br>
-        <h4>Maximum Temp- ${data.main.temp_max}℃</h4>
-        <h4>Minimum Temp- ${data.main.temp_min}℃</h4>
+        <h4>Maximum Temp- ${(data.main.temp_max-273.15).toFixed(2)}℃</h4>
+        <h4>Minimum Temp- ${(data.main.temp_min-273.15).toFixed(2)}℃</h4>
         </div>
         <div>
         <h4>Wind speed- ${data.wind.speed}km/h </h4>
