@@ -64,9 +64,17 @@ body{
     width:700px;
   }
 }
+
+
 @media (min-width: 100px) and (max-width: 700px) {
-  #s1{
+   #s1{
     width:200px;
-   
+    height:45px;
+   }
+  .icon-button{
+    margin-right:-8.2em;
+    margin-top: -48px;
+    padding: 5px;
+    font-size: 30px;
   }
 }
