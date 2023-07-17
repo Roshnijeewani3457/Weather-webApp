@@ -161,7 +161,7 @@ const findMyState= ()=>{
       fetchWeatherData(lat, lng)
   })
   function fetchWeatherData(lat, lng) {
-    // Replace 'YOUR_API_KEY' with your actual API key
+  
     var apiKey = `3265874a2c77ae4a04bb96236a642d2f`
     var apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${apiKey}`;
 
